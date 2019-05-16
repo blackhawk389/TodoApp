@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:text="
+we also can declare a String variable and populate the string by mixing android line separator and text. finally we can set TextView text by setText(String) method. the TextView will display multiline text on android app"
+    android:gravity="center_horizontal"
+    android:maxLines="7"
+ />

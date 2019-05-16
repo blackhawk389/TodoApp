@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/amount_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/barcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/expected_date_txt">
+
+        <TextView
+            android:id="@+id/currency"
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAR "
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/amount"
+            style="@style/TextHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/prepaid"
+        style="@style/TextHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Prepaid"
+        android:textColor="@color/prepaid"
+        app:layout_constraintBottom_toBottomOf="@+id/barcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/expected_date_txt" />
+
+
+    <TextView
+        android:id="@+id/barcode"
+        style="@style/TextHeadingNormal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="23JY12FD0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/amount_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/expected_date_txt"
+        style="@style/TextHeadingNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text=""
+        android:textColor="@color/text_heading_opacity_50"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barcode" />
+
+    <TextView
+        android:id="@+id/expected_date_value"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="@color/text_heading"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/expected_date_txt"
+        app:layout_constraintTop_toBottomOf="@+id/expected_date_txt" />
+
+
+    <TextView
+        android:id="@+id/deparment_Status_txt"
+        style="@style/TextHeadingNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text=""
+        android:textColor="@color/text_heading_opacity_50"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expected_date_value" />
+
+    <TextView
+        android:id="@+id/department_status_value"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="AKE-652147-FTE44"
+        android:textColor="@color/text_heading"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deparment_Status_txt" />
+
+    <TextView
+        android:id="@+id/amount_txt"
+        style="@style/TextHeadingNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text=""
+        android:textColor="@color/text_heading_opacity_50"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/department_status_value" />
+
+    <TextView
+        android:id="@+id/amount_value"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="AKE-652147-FTE44"
+        android:textColor="@color/text_heading"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_txt" />
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/toolbar_background"
+        app:layout_constraintTop_toBottomOf="@+id/amount_value"></View>
+
+
+</android.support.constraint.ConstraintLayout>

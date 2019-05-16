@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "458716467742",
+    "firebase_url": "https://boxeelive-f3ac4.firebaseio.com",
+    "project_id": "boxeelive-f3ac4",
+    "storage_bucket": "boxeelive-f3ac4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458716467742:android:8b97d011abc6af5b",
+        "android_client_info": {
+          "package_name": "com.app.boxee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458716467742-8d485dpnv4c4s9jmhbp5edv3qminitvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYjCp5qwA2lh6yrPPij6e2-MqVq_4tZZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458716467742-8d485dpnv4c4s9jmhbp5edv3qminitvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458716467742:android:b2b20b1cda516e4f",
+        "android_client_info": {
+          "package_name": "com.app.boxee.shopper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458716467742-8d485dpnv4c4s9jmhbp5edv3qminitvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYjCp5qwA2lh6yrPPij6e2-MqVq_4tZZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458716467742-8d485dpnv4c4s9jmhbp5edv3qminitvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    tools:context="com.app.boxee.shopper.fragments.TrackingFragment">
+
+    <TextView
+        android:id="@+id/heading"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/worksans_medium"
+        android:gravity="center"
+        android:text="@string/please_enter_a_6_digits_verification_code_we_have_just_sent_to_your_mobile_make_sure_it_is_you_on_the_phone_number_ending_with_xxxxxxxx_3digits"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <EditText
+            android:id="@+id/one"
+            style="@style/EditTextPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/two"
+            style="@style/EditTextPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/three"
+            style="@style/EditTextPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="10dp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@color/text_heading" />
+
+        <EditText
+            android:id="@+id/four"
+            style="@style/EditTextPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/five"
+            style="@style/EditTextPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/six"
+            style="@style/EditTextPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="10dp"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_resend"
+        style="@style/Button_rounded"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pin"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_btn_resend"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="3dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:drawableStart="@drawable/ic_check_black_24dp"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:text="Submit" />
+
+</RelativeLayout>

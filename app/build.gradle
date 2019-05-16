@@ -1,0 +1,181 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+apply plugin: 'io.fabric'
+
+
+android {
+
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    def versionPropsFile = file('version.properties')
+    def code = 1;
+    if (versionPropsFile.canRead()) {
+        def Properties versionProps = new Properties()
+
+        versionProps.load(new FileInputStream(versionPropsFile))
+        List<String> runTasks = gradle.startParameter.getTaskNames();
+        def value = 0
+        for (String item : runTasks)
+            if (item.contains("assembleRelease")) {
+                value = 1;
+            }
+        code = Integer.parseInt(versionProps['VERSION_CODE']).intValue() + value
+        versionProps['VERSION_CODE'] = code.toString()
+        versionProps.store(versionPropsFile.newWriter(), null)
+    } else {
+        throw new GradleException("Could not read version.properties!")
+    }
+
+    defaultConfig {
+        applicationId "com.app.boxee.shopper"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode code
+        versionName "CLEX Shopper Build 2"
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+        buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
+    }
+
+    signingConfigs {
+        release {
+            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        dev {
+            applicationIdSuffix ".dev"
+//            ext.enableCrashlytics = false
+        }
+        staging {
+            applicationIdSuffix ".staging"
+        }
+        live {
+            applicationId 'com.app.boxee.shopper'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "com.android.support:cardview-v7:27.1.1"
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.6@aar') {
+        transitive = true;
+    }
+    implementation 'com.google.firebase:firebase-database:16.1.0'
+    implementation 'com.google.android.gms:play-services-gcm:16.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:15.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.2.1'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:1.1.0"
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    // alternatively, just ViewModel
+    implementation "android.arch.lifecycle:viewmodel:1.1.0"
+    // alternatively, just LiveData
+    implementation "android.arch.lifecycle:livedata:1.1.0"
+
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.0"
+
+    // Room (use 1.1.0-alpha2 for latest alpha)
+    implementation "android.arch.persistence.room:runtime:1.0.0"
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
+
+    // GSON
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    // RETROFIT
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    // DAGGER 2
+    implementation 'com.google.dagger:dagger-android:2.11'
+    implementation 'com.google.dagger:dagger-android-support:2.11'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.11'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'
+
+    // BUTTERKNIFE
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    // GLIDE
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    implementation 'com.github.vipulasri:timelineview:1.0.6'
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+    //CHUCK
+    debugImplementation 'com.readystatesoftware.chuck:library:1.1.0'
+    releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
+    implementation('com.crashlytics.sdk.android:crashlytics-ndk:2.0.5@aar') {
+        transitive = true;
+    }
+
+
+
+       // implementation 'com.google.android.libraries.places:places:1.0.0'
+
+    implementation 'testfairy:testfairy-android-sdk:1.+@aar'
+    //implementation 'com.google.android.libraries.places:places:1.1.0'
+
+    //implementation 'com.google.android.libraries.places:places-compat:1.1.0'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+crashlytics {
+    enableNdk true
+    androidNdkOut 'src/main/obj'
+    androidNdkLibsOut 'src/main/libs'
+}

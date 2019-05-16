@@ -1,0 +1,181 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:editTextStyle">@style/EditTextDefault</item>
+        <item name="android:buttonStyle">@style/Button</item>
+
+    </style>
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorDarkPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <style name="CustomTabStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@drawable/tab_text_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/worksans_semibold</item>
+
+    </style>
+    <style name="CustomRadioButtonStyle" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@drawable/rb_text_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/worksans_semibold</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="editTextStyle">@style/EditTextDefault</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+    <style name="TitleBarTextAppearance" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/worksans_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--editText Styles-->
+    <style name="EditTextDefault" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/text_heading</item>
+        <item name="android:background">@drawable/bg_input_field</item>
+        <item name="android:fontFamily">@font/worksans_regular</item>
+        <item name="android:paddingStart">25dp</item>
+        <item name="android:paddingEnd">25dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="EditTextPin" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/text_heading</item>
+        <item name="android:background">@drawable/pin_input_bg</item>
+        <item name="android:fontFamily">@font/worksans_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="EditTextMultiline" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/text_heading</item>
+        <item name="android:background">@drawable/edit_text_style</item>
+        <item name="android:fontFamily">@font/worksans_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--textview Styles-->
+
+    <style name="CustomTextView" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextHeading" parent="CustomTextView">
+        <item name="android:textColor">@color/text_heading</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/worksans_bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextHeadingNormal" parent="CustomTextView">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/worksans_semibold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextRegular" parent="CustomTextView">
+        <item name="android:textColor">@color/text_active</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/worksans_regular</item>
+    </style>
+
+    <style name="TextMedium" parent="CustomTextView">
+        <item name="android:textColor">@color/text_heading</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/worksans_medium</item>
+    </style>
+    <!--buttonsStyles-->
+    <style name="CustomButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="ButtonAccent" parent="CustomButton">
+        <item name="android:background">@drawable/bg_button_accent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:fontFamily">@font/worksans_semibold</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="ButtonSecondary" parent="CustomButton">
+        <item name="android:background">@drawable/bg_button_secondary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:fontFamily">@font/worksans_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">50dp</item>
+
+
+    </style>
+    <style name="Button_rounded" parent="CustomButton">
+        <item name="android:background">@drawable/button_rounded</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:drawableStart">@drawable/ic_directions</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/worksans_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">50dp</item>
+
+
+    </style>
+    <style name="Button_rounded_default" parent="CustomButton">
+        <item name="android:background">@drawable/button_rounded</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/worksans_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">50dp</item>
+
+
+    </style>
+
+    <style name="Button" parent="CustomButton">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:fontFamily">@font/worksans_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">50dp</item>
+
+
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+</resources>

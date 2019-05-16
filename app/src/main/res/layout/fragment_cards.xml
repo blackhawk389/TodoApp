@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_content"
+    android:background="@color/app_bg"
+    android:gravity="center_vertical"
+    tools:context="com.app.boxee.shopper.fragments.CardsFragment">
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Live Chat"
+    android:id="@+id/chat"
+    android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    android:drawableStart="@drawable/ic_chat"
+    style="@style/ButtonAccent"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call to toll free Number"
+        android:layout_below="@+id/chat"
+        android:paddingStart="50dp"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:paddingEnd="50dp"
+        android:id="@+id/call"
+        android:drawableStart="@drawable/ic_call"
+        style="@style/ButtonAccent"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:layout_below="@+id/call"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:id="@+id/feedback"
+        android:drawableStart="@drawable/ic_feedback"
+        style="@style/ButtonAccent"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complaints / Suggestions"
+        android:layout_below="@+id/feedback"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:id="@+id/complaints"
+        android:drawableStart="@drawable/ic_complaint"
+        style="@style/ButtonAccent"/>
+</RelativeLayout>

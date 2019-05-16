@@ -1,0 +1,186 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="50dp"
+  >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+   >
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/barcode"
+                style="@style/TextHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="23JY12FD0"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/barcode"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/barcode"
+                android:background="@drawable/toolbar_background" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_below="@+id/barcode"
+                tools:listitem="@layout/item_timeline_address" />
+
+            <TextView
+                android:id="@+id/expected_date_txt"
+                style="@style/TextHeadingNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerViewAddress"
+                android:layout_marginTop="7dp"
+                android:text=""
+                android:textColor="@color/text_heading_opacity_50"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/expected_date_value"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expected_date_txt"
+                android:layout_marginTop="5dp"
+                android:text="AKE-652147-FTE44"
+                android:textColor="@color/text_heading"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/expected_time_txt"
+                style="@style/TextHeadingNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expected_date_value"
+                android:layout_marginTop="7dp"
+                android:text="WEBSHOP"
+                android:textColor="@color/text_heading_opacity_50"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/webshop_value"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expected_time_txt"
+                android:layout_marginTop="5dp"
+                android:text="AKE-652147-FTE44"
+                android:textColor="@color/text_heading"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/deparment_Status_txt"
+                style="@style/TextHeadingNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/webshop_value"
+                android:layout_marginTop="7dp"
+                android:text=""
+                android:textColor="@color/text_heading_opacity_50"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/department_status_value"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="AKE-652147-FTE44"
+                android:textColor="@color/text_heading"
+                android:textSize="14sp"
+                android:layout_below="@+id/deparment_Status_txt"
+                />
+
+            <TextView
+                android:id="@+id/amount_txt"
+                style="@style/TextHeadingNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text=""
+                android:textColor="@color/text_heading_opacity_50"
+                android:textSize="10sp"
+                android:layout_below="@+id/department_status_value"/>
+
+
+
+            <TextView
+                android:id="@+id/amount_value"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="AKE-652147-FTE44"
+                android:textColor="@color/text_heading"
+                android:textSize="14sp"
+                android:layout_below="@+id/amount_txt"/>
+            <TextView
+                android:id="@+id/cash_type"
+                style="@style/TextHeadingNormal"
+                android:textColor="@color/text_heading_opacity_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Cash on Delivey"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/amount_txt"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <Button
+        android:layout_width="match_parent"
+        style="@style/ButtonAccent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:id="@+id/card_payment"
+        android:visibility="gone"
+        android:text="pay via credit/debit card"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_delivery_date"
+        android:layout_below="@+id/card_payment"
+        android:visibility="gone"
+        android:text="Change Delivery Date"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_locations"
+        style="@style/ButtonSecondary"
+        android:visibility="gone"
+        android:text="Change delivery locations"
+        android:layout_below="@+id/btn_delivery_date"/>
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

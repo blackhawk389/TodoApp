@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:padding="20dp"
+    tools:context="com.app.boxee.shopper.fragments.TrackingFragment">
+
+    <TextView
+        android:id="@+id/heading"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/worksans_semibold"
+        android:text="Enter Tracking Number in Each Line"
+        android:textSize="18sp" />
+
+<ScrollView
+
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/heading"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/barcodes_et"
+        style="@style/EditTextMultiline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Tracking Number..."
+        android:inputType="textMultiLine"
+        android:paddingTop="10dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barcodes_et"
+        android:drawableStart="@drawable/ic_check_black_24dp"
+        android:paddingEnd="50dp"
+        android:enabled="false"
+        android:paddingStart="50dp"
+        android:text="Submit" />
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+</RelativeLayout>

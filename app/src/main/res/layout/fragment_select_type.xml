@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_content"
+    tools:context="com.app.boxee.shopper.fragments.SelectTypeFragment">
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:background="@drawable/toolbar_background"
+        android:elevation="5dp"
+       >
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_incoming"
+                style="@style/CustomRadioButtonStyle"
+                android:background="@drawable/rb_selector"
+                android:checked="true"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:text="Incoming" />
+
+            <RadioButton
+                android:id="@+id/btn_outgoing"
+                style="@style/CustomRadioButtonStyle"
+                android:background="@drawable/rb_selector"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:text="Outgoing" />
+
+        </RadioGroup>
+        <!--<android.support.design.widget.TabLayout-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:minHeight="?actionBarSize"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:tabGravity="fill"-->
+        <!--app:tabIndicatorColor="@color/white"-->
+        <!--app:tabSelectedTextColor="@color/white"-->
+        <!--app:tabTextAppearance="@style/CustomTabStyle"-->
+        <!--app:tabTextColor="@color/text_inactive">-->
+
+        <!--<android.support.design.widget.TabItem-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/incoming_tab"-->
+        <!--android:text="Incoming"/>-->
+
+        <!--<android.support.design.widget.TabItem-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/outgoing_tab"-->
+        <!--android:text="Outgoing" />-->
+
+
+        <!--</android.support.design.widget.TabLayout>-->
+    </LinearLayout>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swap"
+    android:layout_below="@id/tabs">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/select_mode_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@id/tabs"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/select_mode_item" />
+</android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/heading"
+    style="@style/TextRegular"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_input_field"
+    android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+    android:gravity="center_vertical"
+    android:paddingBottom="15dp"
+    android:paddingEnd="25dp"
+    android:paddingStart="25dp"
+    android:text="Red"
+    android:textAllCaps="true"
+    android:textColor="@color/text_active"
+    android:textSize="12sp" />
+

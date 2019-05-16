@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "494686120374",
+    "firebase_url": "https://fb-authentication-bfb00.firebaseio.com",
+    "project_id": "fb-authentication-bfb00",
+    "storage_bucket": "fb-authentication-bfb00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494686120374:android:3ebef6c3f6eba171",
+        "android_client_info": {
+          "package_name": "com.app.boxee.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494686120374-757ac2ndqdlul2vgvgkfm1aer1qaiimu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTWuTiRCxH9snBnh8IJkpkiy7P7cQhXlM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494686120374:android:438780ce6f3108ff",
+        "android_client_info": {
+          "package_name": "com.app.boxee.shopper.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494686120374-757ac2ndqdlul2vgvgkfm1aer1qaiimu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTWuTiRCxH9snBnh8IJkpkiy7P7cQhXlM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

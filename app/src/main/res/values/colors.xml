@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#86c745</color>#FF8DC73F#FF7BC850
+    <color name="colorPrimaryDark">#86c745</color>
+    <color name="colorAccent">#0044B8</color>
+    <color name="colorDarkPrimary">#74ab3d</color>
+    <color name="colorDarkAccent">#FF0055A5</color>
+    <color name="toolbarGrediantStart">#8BC741</color>
+    <color name="toolbarGredianEnd">#72D356</color>
+    <color name="colorPrimaryDarkOpacity">#7b86c745</color>
+    <color name="defaultBorderFlagColor">@android:color/transparent</color>
+    <color name="pressed_bg">#64b7b7b7</color>
+    <!--<color name="border_separator">#7e8082</color>-->
+    <!--<color name="transparent">@android:color/transparent</color>-->
+    <!--<color name="one">#b6f42e</color>-->
+    <!--<color name="two">#aeeb2d</color>-->
+    <!--<color name="blur">#818dc73f</color>-->
+    <!--<color name="blackaplha">#6a000000</color>-->
+    <!--<color name="simpleGray">#f4f4f4</color>-->
+    <!--<color name="lightGreen">#edf9dc</color>-->
+    <color name="white_opacity">#80FFFFFF</color>
+    <color name="white_opacity_70">#B3FFFFFF</color>
+    <color name="prepaid">#1DCFB9</color>
+    <color name="prepaidOpacity">#7b1dcfb9</color>
+    <color name="mustard">#E37231</color>
+    <color name="mustardOpacity">#7be37231</color>
+    <color name="aqua">#3FAEDD</color>
+    <color name="aquaOpacity">#7b3faedd</color>
+
+    <color name="app_bg">#F8F9FD</color>
+    <!--&lt;!&ndash;<color name="colorAccent">#4b77be</color>&ndash;&gt;-->
+    <color name="text_heading">#282A5E</color>
+    <color name="text_heading_opacity_50">#80282A5E</color>
+    <color name="shadow">#E3E3E7</color>
+
+    <color name="text_active">#FF282A5E</color>
+    <color name="text_inactive">#828997</color>
+    <!--<color name="dark_grey">#c0c0c0</color>-->
+    <color name="divider_color">#12979797</color>
+    <!--&lt;!&ndash;Dark Grey Color: #303132&ndash;&gt;-->
+    <!--<color name="dark_grey_color">#303132</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="dark_red">#a6071e</color>
+    <color name="dark_redOpacity">#7ba6071e</color>
+
+    <color name="red">#E40062</color>
+    <!--<color name="pickupColor">#b2cce3</color>-->
+    <!--<color name="deliverColor">#d2e9b3</color>-->
+    <!--<color name="light_pink">#FFE4E8</color>-->
+
+
+    <!--<color name="light_grey">#d3d3d3</color>-->
+    <!--<color name="very_light_grey">#f5f5f5</color>-->
+    <!--<color name="progress">#b4ffffff</color>-->
+    <color name="black">#000000</color>
+    <!--<color name="black_semi">#2d2d2d</color>-->
+    <!--<color name="green">#00AA5B</color>-->
+
+    <!--<color name="bgColor">#f4f4f4</color>-->
+
+    <!--&lt;!&ndash;<color name="bgColor">#e2e2e2</color>&ndash;&gt;-->
+    <!--<color name="your_push_notification_color">#FFE4E8</color>-->
+
+
+</resources>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Boxee Shopper</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome</string>
+    <string name="skip">Skip</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="home_options_lb">
+        <item>Home</item>
+        <item>Tracking</item>
+        <item>Location</item>
+        <item>Cards</item>
+    </string-array>
+    <string-array name="order_details_options">
+        <item>Shipment Details</item>
+        <item>Shipment Status</item>
+    </string-array>
+    <string-array name="nav_options">
+        <item>My Profile</item>
+        <item>Order History</item>
+        <item>My Addresses</item>
+        <item>Help &amp; support</item>
+        <item>Contact Us</item>
+        <item>About Us</item>
+    </string-array>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="timeLoad">timeLoad</string>
+    <string name="webshop">webshop</string>
+    <string name="status">consignment_status</string>
+    <string name="consignment">consignment</string>
+    <string name="please_enter_a_6_digits_verification_code_we_have_just_sent_to_your_mobile_make_sure_it_is_you_on_the_phone_number_ending_with_xxxxxxxx_3digits"><![CDATA[Please enter a 6-Digits verification code we have just sent to your mobile, make sure it is you on the phone number ending with XXXXXXXX<3digits>]]></string>
+    <string name="select_country">Select Country</string>
+    <string name="search_hint">Search</string>
+    <string name="no_result_found">No country found</string>
+    <string name="push_token">pushToken</string>
+    <string name="user_id">userId</string>
+    <string name="notification_status">notification_status</string>
+    <string name="actionCode">CN</string>
+    <string name="OrderID">orderId</string>
+    <string name="default_notification_channel_id">10001</string>
+    <string name="croppedImage">scaled</string>
+
+    <string-array name="statuses">
+        <item>issued</item>
+        <item>booked</item>
+        <item>intransit</item>
+        <item>delivered</item>
+        <item>lost measure</item>
+        <item>damage</item>
+        <item>un delivered</item>
+        <item>unsuccessful pickup</item>
+        <item>partially delivered</item>
+
+    </string-array>
+</resources>

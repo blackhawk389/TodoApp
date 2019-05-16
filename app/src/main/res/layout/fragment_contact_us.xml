@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.boxee.shopper.fragments.ContactUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:id="@+id/rl_contact">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heading"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="CONTACT US" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading"
+            android:layout_marginTop="20dp"
+            android:layout_alignLeft="@+id/heading"
+            android:layout_alignRight="@+id/heading"
+            android:id="@+id/fone"
+            android:textSize="14sp"
+            android:text="92009191" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fone"
+            android:id="@+id/email"
+            android:textSize="14sp"
+            android:text="sales@clexonline.com" />
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/img_fone"-->
+            <!--android:layout_alignStart="@+id/fone"-->
+            <!--android:layout_alignBaseline="@+id/fone"/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/img_email"-->
+            <!--android:layout_alignStart="@+id/email"-->
+            <!--android:layout_alignBaseline="@+id/email"-->
+            <!--/>-->
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@color/white_opacity"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_info_window_branch"
+        android:layout_width="220dp"
+        style="@style/TextHeadingNormal"
+        android:text="BOXEE pickup -z"
+        android:textColor="@color/text_heading"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_info_window_address"
+        android:layout_width="220dp"
+        style="@style/TextMedium"
+
+        android:text="csdcsdc"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_heading_opacity_50" />
+
+    <TextView
+        android:id="@+id/tv_info_window_phone"
+        android:layout_width="220dp"
+        style="@style/TextMedium"
+        android:drawablePadding="4dp"
+        android:autoLink="all"
+        />
+
+    <Button
+        android:layout_width="140dp"
+        android:paddingTop="3dp"
+        android:layout_height="40dp"
+        android:text="Directions"
+        style="@style/Button_rounded"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_directions"
+        android:paddingStart="20dp"
+        android:id="@+id/btn_directions"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,280 @@
+{
+  "Name" : "مرحبا",
+  "app.dashboard.welcome" : "مرحبا",
+  "app.dashboard.signIn":"التسجيل",
+  "app.dashboard.trackOrder":"تتبع الطلب برقم بوليصة الشحن",
+  "app.dashboard.clexLocations":"مواقع مكاتب سيليكس",
+  "app.dashboard.myCards":"الدعم والمساعدة",
+  "app.dashboard.skip":"Skip",
+  "app.login.signIn":"التسجيل ",
+  "app.login.btnLogin":"تسجيل الدخول",
+  "app.login.loginTerms":"بتسجيلكم معنا فأنتم توافقون على شروط <b>الاستخدام و سياسة الخصوصية<b/> ",
+  "app.login.numberRequiredValidation":"ادخل رقم صحيح",
+  "app.login.incorrectNumberValidation":"ادخل رقم صحيح",
+  "app.number.verification.title":"التحقق من الرقم",
+  "app.number.verification.heading":"الرجاء ادخال رمز التحقق المكون من ست خانات و الذي تم ارساله على رقم الجوال المنتهي ب XXXXXXXX",
+  "app.number.verification.btnSubmit":"تابع",
+  "app.number.verification.incorrectValidation":"الرمز غير مطابق",
+  "app.number.verification.resend":"إعادة ارسال",
+  "app.sidemenu.name":"مرحبا ",
+  "app.sidemenu.notifications":"تفعيل التنبيهات",
+  "app.sidemenu.signOut":"تسجيل الخروج",
+  "app.sidemenu": [
+    {
+      "value": "الملف الشخصي",
+      "key": "profile"
+    },
+    {
+      "value": "Order History",
+      "key": "order_history"
+    },
+    {
+      "value": "عناويني",
+      "key": "my_addresses"
+    },
+    {
+      "value": "الدعم والمساعدة",
+      "key": "help_support"
+    },
+    {
+      "value": "تواصل معنا",
+      "key": "contact_us"
+    },
+    {
+      "value": "عن شركتنا",
+      "key": "about_us"
+    },
+    {
+      "value": "تسجيل الخروج",
+      "key": "signout"
+    },
+    {
+      "value": "خدماتنا",
+      "key": "services"
+    }
+  ],
+  "app.languages": [
+    {
+      "code": 0,
+      "name": "English",
+      "l_code": "en"
+    },
+    {
+      "code": 1,
+      "name": "عربي",
+      "l_code": "ar"
+    }
+  ],
+  "app.home.title":"الصفحة الرئيسية",
+  "app.home.options":[
+    {
+      "code": 0,
+      "name": "الشحنات الواردة"
+    },
+    {
+      "code": 1,
+      "name": "الشحنات الصادرة"
+    }
+  ],
+  "app.home.options.incoming":[
+    {
+      "code": 0,
+      "name": "في مرحلة التجهيز مع المرسل"
+    },
+    {
+      "code": 1,
+      "name": "في مرحلة التجهيز مع عمليات سيليكس "
+    },
+    {
+      "code": 2,
+      "name": "خرجت للتوصيل إلى عنواني"
+    },
+    {
+      "code": 3,
+      "name": "تم التوصيل إلى عنواني"
+    },
+    {
+      "code": 4,
+      "name": "الشحنة في مكتب سيليكس"
+    },
+    {
+      "code": 5,
+      "name": "تم ارجاع الشحنة إلى المرسل"
+    }
+  ],
+  "app.home.options.outgoing":[
+    {
+      "code": 0,
+      "name": "تم انشاء بوليصة ارجاع لطلبك عن طريق المرسل"
+    },
+    {
+      "code": 1,
+      "name": "جدولة / إعادة جدولة استلام الشحنة من مقر تواجدي عن طريق مندوب سيليكس"
+    },
+    {
+      "code": 2,
+      "name": "الاستلام اليوم من مقر تواجدي عن طريق مندوب سيليكس"
+    },
+    {
+      "code": 3,
+      "name": "تم استلام الشحنة من قبل سيليكس "
+    },
+    {
+      "code": 4,
+      "name": "سجل الشحنات المرتجعة"
+    }
+  ],
+  "app.tracking.title":"تتبع الشحنة",
+  "app.tracking.heading":"ادخل رقم الشحنة   كل شحنة في سطر جديد",
+  "app.tracking.etTrackingHint":"ادخل رقم الشحنة",
+  "app.tracking.btnSubmit":"تابع",
+  "app.locations.title":"مواقع",
+  "app.locations.title":"اختر العنوان",
+  "app.locations.options":[
+    {
+      "code": 0,
+      "name": "Pick Up"
+    },
+    {
+      "code": 1,
+      "name": "Drop Off"
+    }
+  ],
+  "app.cards.title":"Cards",
+  "app.general.network.error": "Network not available",
+  "app.orderStatus.title":"حالة الطلب",
+  "app.orderStatus.noShipmentFound":"لم يتم ايجاد شحنة تحت رقم الطلب المدخل",
+  "app.orderStatus.deliveryDate":"تاريخ التوصيل",
+  "app.orderStatus.deliveryDateLabel":"تاريخ التوصيل",
+  "app.orderStatus.pickUpDate":"تاريخ الاستلام",
+  "app.orderStatus.shipmentReturnDate" : "Shipment's Return Date",
+  "app.orderStatus.ReturnDate" : "تاريخ الارجاع",
+  "app.orderStatus.status":"الحالة",
+  "app.orderStatus.webshop":"المرسل",
+  "app.orderDetails.title":"بيانات الطلب",
+  "app.orderDetails.options":[
+    {
+      "code": 0,
+      "name": "الشحنة تفاصيل"
+    },
+    {
+      "code": 1,
+      "name": "حالة الشحنة"
+    }
+  ],
+  "app.shipmentDetails.from":"من",
+  "app.shipmentDetails.to":"إلى",
+  "app.shipmentDetails.deliveryDate":"تاريخ التوصيل",
+  "app.shipmentDetails.deliveryTime":"Delivery Time",
+  "app.shipmentDetails.status":"الحالة",
+  "app.shipmentDetails.amount":"المبلغ",
+  "app.billingType":[
+    {
+      "code": 0,
+      "name": "الدفع عند الاستلام"
+    },
+    {
+      "code": 1,
+      "name": "مسبق الدفع"
+    }
+  ],
+  "app.location.filter":"مكاتب سيليكس للاستلام و التسليم",
+  "app.shipmentDetails.btnChangeDeliveryDate":"تغيير تاريخ التوصيل",
+  "app.shipmentDetails.btnChangeDeliveryLocations":"تغيير عنوان التوصيل",
+  "app.shipmentDetails.btnchangePaymentMethod":"pay via credit/debit card",
+  "app.shipmentDetails.btnGenerateTicket": "تقديم شكوى / اقتراح",
+  "app.shipmentDetails.DateUpdated": "تم تحديث التاريخ",
+  "app.shipmentDetails.btnChangPickupDate": "تغيير تاريخ استلام الشحنة مني",
+  "app.shipmentDetails.btnChangPickupLocation": "تغيير العنوان",
+  "app.shipmentDetails.btnDownloadAWB": "Download AWB",
+  "app.shipmentDetails.pleaseContactShipper": "الرجاء التواصل مع المرسل",
+  "app.shipmentDetails.pleaseContactWebshop": "Please Contact Webshop",
+  "app.shipmentStatus.Title": "حالة الشحنة",
+  "app.message,enter" :"ادخل رسالة",
+
+  "app.shipmentDetails.inValidDate.Toast":"الرجاء اختيار يوم اخر",
+  "app.profile.title":"الملف الشخصي",
+  "app.profile.firstNameHint":"الاسم الأول",
+  "app.profile.lastNameHint":"اسم العائلة",
+  "app.profile.emailHint":"البريد الالكتروني",
+  "app.profile.btnSubmit":"تابع",
+  "app.profile.btnCancel":"إلغاء",
+  "app.profile.btnMakeDefault":"حدد كاختيار افتراضي",
+  "app.profile.defaultAddress":"العنوان الافتراضي",
+  "app.profile.homeLabel":"المنزل",
+  "app.profile.workLabel":"العمل",
+  "app.profile.secondaryNumberHint":"رقم الاتصال الاضافي ",
+  "app.profile.enterDetails":"الرجاء ادخال البيانات",
+
+  "app.sidemenu.profile":"الملف الشخصي",
+  "app.sidemenu.order_history":"Order History",
+  "app.sidemenu.my_addresses":"عناويني",
+  "app.sidemenu.help_support":"الدعم والمساعدة",
+  "app.sidemenu.contact_Us":"تواصل معنا",
+  "app.sidemenu.About_Us":"عن شركتنا",
+  "app.home.options.incoming.inPreparationWithWebshop" : "In Preparation by Webshop",
+  "app.home.options.incoming.inProgressWithClex" : "In Progress With CLEX",
+  "app.home.options.incoming.ArrivingToday" : "Arriving Today",
+  "app.home.options.incoming.History" : "History",
+  "app.home.options.incoming.onHold" : "On Hold With CLEX",
+  "app.home.options.outgoing.AWBS" : "AWBs Generated by Webshop for return",
+  "app.home.options.outgoing.schedule" : "Schedule My Pickup",
+  "app.home.options.outgoing.pickingUpToday" : "Picking up Today",
+  "app.home.options.outgoing.pickedUpByClex" : "Picked Up By Clex",
+  "app.home.options.outgoing.Return_History" : "سجل الشحنات المرتجعة",
+  "app.Loading" : "تحميل",
+  "app.address.city" : "المدينة",
+  "app.address.areaNeighbourhood" : "الحي / المنطقة",
+  "app.address.nearestLandmark" : "أقرب معلم مشهور ",
+  "app.address.streetName" : "اسم الشارع",
+  "app.address.buildingName" : "اسم المبنى",
+  "app.address.appartment" : "رقم الشقة / رقم المنزل",
+  "app.address.pinLocation" : "تحديد موقعكم الحالي ",
+  "app.address.addAddress" : "أضف عنوان",
+  "app.address.updateAddress" : "تحديث العنوان",
+  "app.address.deleteAddress" : "هل انت متاكد من رغبتك في مسح العنوان",
+  "app.address.deleteAddressMsg" : "هل انت متاكد من رغبتك في مسح العنوان",
+  "app.address.areaMsg" : "الرجاء ادخال اسم الحي",
+  "app.address.addingAddress" : "يتم إضافة العنوان",
+  "app.address.addressAdded" : "تم إضافة العنوان",
+  "app.address.defaultAddressUpdated.succes" : "تم إضافة العنوان الافتراضي بنجاح",
+  "app.address.pinpoint.selectALoc" : "اختر العنوان ",
+  "app.address.pinpoint.selectThisLoc" : "اختيار هذا العنوان",
+  "app.address.pinpoint.addressUpdated" : "تم تحديث العنوان بنجاح",
+  "app.tabar.more":"المزيد",
+  "app.tabar.back":"رجوع",
+
+  "app.generateTicket.labelTitle":"العنوان الرئيسي",
+  "app.generateTicket.labelMessage":"رسالة",
+  "app.generateTicket.GenerateTicketBtn":"تقديم شكوى / اقتراح",
+  "app.generateTicket.titlePlaceHolder":"ادخل الموضوع",
+  "app.generateTicket.TicketGeneratedSuccesfully":"Ticket Generated Succesfully",
+
+  "app.done":"تم",
+  "app.cancel":"إلغاء",
+  "app.saudiaArabia" : "المملكة العربية السعودية",
+  "app.locations.selectMsg":"الرجاء اختيار المدينة",
+  "app.address.no.found" : "لم يتم إيجاد العنوان",
+  "app.dashboard.services" : "خدماتنا",
+  "app.delete.default.address" : "الرجاء تحديد عنوان اساسي اخر للمتابعة",
+  "app.ok" : "موافق",
+  "app.yes" : "نعم فعلا",
+  "app.no" : "لا",
+  "app.edit.address" : "Edit Address",
+  "app.email.support" :"sales@clexonline.com",
+  "app.email.phone" :"92009191",
+  "app.email.no.shipment" :"لا يوجد شحنات باسم العميل",
+  "app.paid" :"مدفوع",
+  "app.paid.pre":"مسبق الدفع",
+  "app.message.enter.resend" :"اعادة ارسال الرمز",
+  "app.message.enter.resend.rate.service" :"تقييم مستوى الخدمة",
+  "app.message.enter.resend.rate.service.enter.area" :"الرجاء ادخال اسم الحي",
+  "app.message.enter" :"ادخل رسالة",
+  "app.address.select.city": "الرجاء اختيار المدينة",
+  "app.profile.secondary.number": "رقم الهاتف يجب ان يكون 9 خانات",
+  "app.tracking.enter": "الرجاء إدخال رقم التتبع",
+  "app.numbr": "966+"
+
+}
+
+

@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.boxee.shopper.fragments.AddAddressFragment">
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Address Nickname" />
+
+        <AutoCompleteTextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint=""
+            android:focusable="false"
+            android:background="@drawable/bg_input_field"
+            android:padding="25dp">
+    </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:background="@drawable/bg_input_field"
+
+            android:hint=""
+            android:padding="25dp">
+    </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:singleLine="true"
+            android:background="@drawable/bg_input_field"
+            android:padding="25dp">
+    </AutoCompleteTextView>
+
+
+        <EditText
+            android:id="@+id/landmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/building"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="" />
+
+        <EditText
+            android:id="@+id/apartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="" />
+
+        <Button
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_btn_stroke"
+            android:drawableStart="@drawable/ic_tab_location_active"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/add_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_add_circle_outline_black_24dp"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:text="Add address" />
+    </LinearLayout>
+</ScrollView>

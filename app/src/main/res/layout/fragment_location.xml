@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_content"
+    android:layout_height="match_parent"
+    tools:context="com.app.boxee.shopper.fragments.SelectTypeFragment">
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_background"
+        android:elevation="5dp"
+        android:paddingStart="50dp">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_pick"
+                style="@style/CustomRadioButtonStyle"
+                android:background="@drawable/rb_selector"
+                android:checked="true"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:text="Pick up" />
+
+            <RadioButton
+                android:id="@+id/btn_drop"
+                style="@style/CustomRadioButtonStyle"
+                android:background="@drawable/rb_selector"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:text="Drop off" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        app:layout_anchor="@+id/app_bar"
+        app:layout_anchorGravity="bottom"
+        android:id="@+id/app_bar_spinner"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_background"
+        android:stateListAnimator="@null">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/below_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/TitleBarTextAppearance">
+
+            <Spinner
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@null"
+                android:visibility="gone"></Spinner>
+            <ImageView
+                android:id="@+id/add_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_add_circle_outline_black_24dp"
+                android:visibility="gone" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs" />
+</RelativeLayout>

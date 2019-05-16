@@ -1,0 +1,171 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.boxee.shopper.fragments.AddAddressFragment">
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Title"
+            android:paddingStart="20dp" />
+
+        <Spinner
+            android:id="@+id/titleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Country" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint=""
+            android:paddingStart="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:maxLines="5"
+            android:layout_margin="20dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:hint=""
+            android:gravity="start"
+            android:background="@drawable/textbox_background"
+            android:elevation="2dp"
+            android:paddingTop="10dp"
+            android:id="@+id/messageEdit"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp">
+
+            <RelativeLayout
+                android:id="@+id/attachOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dotted_border">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageview"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/attachment" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/c"
+
+                android:visibility="gone"
+                android:layout_gravity="top|right"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/index" />
+
+        </FrameLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:id="@+id/rll"
+                android:layout_marginStart="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/attachTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@drawable/dotted_border">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageview1"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/attachment" />
+            </RelativeLayout>
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/c1"
+                android:layout_alignTop="@+id/attachTwo"
+                android:layout_alignRight="@+id/attachTwo"
+                android:visibility="gone"
+                android:background="@drawable/index" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:id="@+id/rl2"
+                android:layout_marginStart="10dp">
+
+            <RelativeLayout
+                android:id="@+id/attachThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dotted_border">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageview2"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/attachment" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/c2"
+                android:layout_alignTop="@+id/attachThree"
+                android:visibility="gone"
+                android:layout_alignRight="@+id/attachThree"
+                android:background="@drawable/index" />
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:text="" />
+    </LinearLayout>
+</ScrollView>
